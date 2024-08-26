@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de Texto</title>
+</head>
+
+<body>
+    <div class="padre">
+        <header class="header">
+            <a class="header_unico" href="#" rel="">
+                <img class="logo" src="./assets/favicon.ico" alt="Logo de la Sacerdotisa de Goblin Slayer">
+            </a>
+            <h1>¡Encriptemos este texto mediante el milagro de la Diosa de la Tierra!</h1> 
+        </header>
+
+        
+        <main class="principal">
+            <section class="cuadro_texto">
+                <textarea class="encriptar_texto" id="texto_ingreso" placeholder="Digite su texto aqui"></textarea>
+                <div class="alerta_encriptador">
+                    <img class="icono_alerta" src="./assets/icono-alerta.png" alt="Icono de Alerta" >
+                    <p class="texto_alerta"> Ingrese solo letras minúsculas, no ingrese acentos o caracteres especiales</p>
+                </div>
+                <div class="botones_encriptador">
+                    <button class="boton_encriptar" type="submit">Encriptar</button>
+                    <button class="boton_desencriptar" type="submit">Desencriptar</button>
+                </div>
+            </section>
+            <section class="cuadro_resultado">
+                <div class="cuadro_resultado_encriptador">
+                    <img class="muñeco_cuadro_resultado" src="./assets/priestess2.png" alt="Muñeco Cuadro Resultado" >
+                    <p class="cuadro_resultado_titulo">No he encontrado ningun mensaje</p>
+                    <p class="cuadro_resultado_subtitulo">Digita el texto que deseas encriptar o desencriptar.</p>
+                </div>
+                <textarea class="copiar_texto" id="texto_resultado" type="mensaje" readonly></textarea>
+                <button class="boton_copiar" type="submit">Copiar</button>
+            </section>
+        </main>
+    </div>
+
+    
+    <footer class="footer">
+        <p class="footer__piepagina">| Encriptador de Texto | Por Aldo Rodríguez | 2024 |</p>
+        <a href="https://github.com/ElTioSpider" target="_blank" rel="noreferrer noopener">
+            <img class="footer__github" src="./assets/github.png" alt="Logo GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/aldo-l-rodriguez-s/" target="_blank" rel="noreferrer noopener">
+            <img class="footer__linkedin" src="./assets/linkedin.png" alt="Logo Linkedin">        
+        </a>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
+
